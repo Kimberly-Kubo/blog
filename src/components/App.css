@@ -1,18 +1,35 @@
 .App {
   display: grid;
   grid-template-rows: min-content auto;
-  grid-template-columns: 250px auto;
+  grid-template-columns: auto auto;
   height: 100vh;
   overflow: scroll;
+  font-family: 'Lato', sans-serif;
 }
 
 header {
   display: flex;
   justify-content: space-between;
-  background-color: black;
+  background-color: rgb(91, 0, 165);
   color: white;
   grid-column: 1 / span 2;
   padding: 10px 5px;
+}
+
+button {
+  font-family: 'Lato', sans-serif;
+  background-color:rgb(209, 229, 246);
+  border-color: rgb(163, 182, 182);
+  border-radius: 3px;
+  transition-duration: .4s;
+}
+
+button:hover {
+  background-color: aliceblue;
+}
+
+img {
+  padding-right: 5px;
 }
 
 form {
@@ -35,7 +52,8 @@ article {
 }
 
 nav {
-  background-color: #dee9ff;
+  background: rgb(85,81,156);
+  background: linear-gradient(rgb(208, 208, 255), rgba(160,234,249,1));
 }
 
 nav p:hover {
